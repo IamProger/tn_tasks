@@ -11,6 +11,6 @@ while True:
                 RESULT[character] += 1
             if not COUNTER % 1000:
                 print('a: {}, b: {}, c: {}'.format(*RESULT.values()))
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         print('a: {}, b: {}, c: {}'.format(*RESULT.values()))
         break
