@@ -4,7 +4,7 @@ services:
    build: .
    command: python /project/manage.py runserver 0.0.0.0:8000
    volumes:
-     - ./django_task/db.sqlite3:/project/django_task/db.sqlite3
+     - ./django_task/db.sqlite3:/project/db.sqlite3
    ports:
      - "8000:8000"
    restart: unless-stopped
